@@ -1,13 +1,16 @@
+/* Sets the entire webpage to have all child elements contained in the parent container and sets all padding and margins to 0 */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* Changes the background color of the entire webpage */
 body {
     background-color: #d9dcd6;
 }
 
+/* Sets the default font family and changes the background color and text color of the header for the page */
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,15 +18,18 @@ body {
     color: #ffffff;
 }
 
+/* Sets the size of the Horiseon heading to 48px */
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
+/* Changes the color of the letters seo in the Horiseon heading */
 .header h1 .seo {
     color: #d9dcd6;
 }
 
+/* Aligns the nav bar to the right, sets the default font family and changes the font size to 20px */
 .header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -32,24 +38,29 @@ body {
     font-size: 20px;
 }
 
+/* Gets rid of the bullet points for the list items in the nav bar */
 .header nav ul {
     list-style-type: none;
 }
 
+/* Displays the navbar items next to eachother instead of on top of eachother */
 .header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/* Changes the text color of the navbar links */
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/* Changes the font size for all paragraph elements */
 p {
     font-size: 16px;
 }
 
+/* Adds a background image to the webpage */
 .hero {
     height: 800px;
     width: 100%;
@@ -59,22 +70,26 @@ p {
     background-position: center;
 }
 
+/* Makes whatever is part of this class display to the left of its container */
 .float-left {
     float: left;
     margin-right: 25px;
 }
 
+/* Makes whatever is part of this class display to the right of its container */
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
+/* Sets the width of the content class containers to 75% of the webpage */
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+/* changes the background color and font family of this class and displays the content to the right of the webpage */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -86,54 +101,64 @@ p {
     background-color: #2589bd;
 }
 
+/* Sets the font color of all text in this class to white */
 .benefit-lead {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
+/* Sets the font color of all text in this class to white */
 .benefit-brand {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
+/* Sets the font color of all text in this class to white */
 .benefit-cost {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
+/* Centers the h3 heading */
 .benefit-lead h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
+/* Centers the h3 heading */
 .benefit-brand h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
+/* Centers the h3 heading */
 .benefit-cost h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
+/* Sets the max-width of the image to 150px and centers the image */
 .benefit-lead img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
+/* Sets the max-width of the image to 150px and centers the image */
 .benefit-brand img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
+/* Sets the max-width of the image to 150px and centers the image */
 .benefit-cost img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
+/* Sets the font family, background color and text color of all content in the search engine optimization class. Also makes the height 300px */
 .search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
@@ -143,6 +168,7 @@ p {
     color: #ffffff;
 }
 
+/* Sets the font family, background color and text color of all content in the online reputation management class. Also makes the height 300px */
 .online-reputation-management {
     margin-bottom: 20px;
     padding: 50px;
@@ -152,6 +178,7 @@ p {
     color: #ffffff;
 }
 
+/* Sets the font family, background color and text color of all content in the social media marketing class. Also makes the height 300px */
 .social-media-marketing {
     margin-bottom: 20px;
     padding: 50px;
@@ -161,33 +188,40 @@ p {
     color: #ffffff;
 }
 
+/* Sets the max height of the search engine optimization class image to 200px */
 .search-engine-optimization img {
     max-height: 200px;
 }
 
+/* Sets the max height of the online reputation management class image to 200px */
 .online-reputation-management img {
     max-height: 200px;
 }
 
+/* Sets the max height of the social media marketing class image to 200px */
 .social-media-marketing img {
     max-height: 200px;
 }
 
+/* Sets the font size of the search engine optimization class h2 to 36px */
 .search-engine-optimization h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
+/* Sets the font size of the online reputation management class h2 to 36px */
 .online-reputation-management h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
+/* Sets the font size of the social media marketing class h2 to 36px */
 .social-media-marketing h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
+/* Sets the font family and centers the content of the footer class */
 .footer {
     padding: 30px;
     clear: both;
@@ -195,6 +229,7 @@ p {
     text-align: center;
 }
 
+/* Sets the font size of the footer class h2 to 20px */
 .footer h2 {
     font-size: 20px;
 }
