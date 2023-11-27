@@ -1,3 +1,4 @@
+/* Reorganized selectors on this page to follow proper order. Universal, Type, Class, ID. Also changed flow to mimic flow of the HTML. */
 /* Sets the entire webpage to have all child elements contained in the parent container and sets all padding and margins to 0 */
 * {
     box-sizing: border-box;
@@ -8,6 +9,17 @@
 /* Changes the background color of the entire webpage */
 body {
     background-color: #d9dcd6;
+}
+
+/* Changes the text color of the navbar links */
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Changes the font size for all paragraph elements */
+p {
+    font-size: 16px;
 }
 
 /* Sets the default font family and changes the background color and text color of the header for the page */
@@ -25,7 +37,8 @@ body {
 }
 
 /* Changes the color of the letters seo in the Horiseon heading */
-.header h1 .seo {
+/* directly calling the seo class to make code neater */
+.seo {
     color: #d9dcd6;
 }
 
@@ -39,25 +52,16 @@ body {
 }
 
 /* Gets rid of the bullet points for the list items in the nav bar */
-.header nav ul {
+/* Used descendant selector to make code neater */
+.header ul {
     list-style-type: none;
 }
 
 /* Displays the navbar items next to eachother instead of on top of eachother */
-.header nav ul li {
+/* Used descendant selector to make code neater */
+.header li {
     display: inline-block;
     margin-left: 25px;
-}
-
-/* Changes the text color of the navbar links */
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-/* Changes the font size for all paragraph elements */
-p {
-    font-size: 16px;
 }
 
 /* Adds a background image to the webpage */
@@ -68,6 +72,37 @@ p {
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
+}
+
+/* Sets the width of the content class containers to 75% of the webpage */
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* consolidated 3 seperate article selectors into one by selecting all articles in the content class */
+/* Sets the font family, background color and text color of all content for articles in the content class. Also makes the height 300px */
+.content article {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+/* consolidated 3 seperate h2 selectors into one using the content class */
+/* Sets the font size of the content class h2's to 36px */
+.content h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* consolidated 3 seperate image selectors into one using the content class */
+/* Sets the max height of the content class images to 200px */
+.content img {
+    max-height: 200px;
 }
 
 /* Makes whatever is part of this class display to the left of its container */
@@ -82,13 +117,6 @@ p {
     margin-left: 25px;
 }
 
-/* Sets the width of the content class containers to 75% of the webpage */
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-}
-
 /* changes the background color and font family of this class and displays the content to the right of the webpage */
 .benefits {
     margin-right: 20px;
@@ -101,124 +129,26 @@ p {
     background-color: #2589bd;
 }
 
-/* Sets the font color of all text in this class to white */
-.benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-/* Sets the font color of all text in this class to white */
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-/* Sets the font color of all text in this class to white */
-.benefit-cost {
+/* Sets the font color of all text in the benefits class articles to white */
+/* consolidated 3 seperate article selectors into one by selecting all articles in the benefits class */
+.benefits article {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
 /* Centers the h2 heading */
-.benefit-lead h2 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-/* Centers the h2 heading */
-.benefit-brand h2 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-/* Centers the h2 heading */
-.benefit-cost h2 {
+/* consolidated 3 seperate h2 selectors into one by selecting all h2's in the benefits class */
+.benefits h2 {
     margin-bottom: 10px;
     text-align: center;
 }
 
 /* Sets the max-width of the image to 150px and centers the image */
-.benefit-lead img {
+/* consolidated 3 seperate image selectors into one by using the benefits class */
+.benefits img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
-}
-
-/* Sets the max-width of the image to 150px and centers the image */
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-/* Sets the max-width of the image to 150px and centers the image */
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-/* Sets the font family, background color and text color of all content in the search engine optimization class. Also makes the height 300px */
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-/* Sets the font family, background color and text color of all content in the online reputation management class. Also makes the height 300px */
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-/* Sets the font family, background color and text color of all content in the social media marketing class. Also makes the height 300px */
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-/* Sets the max height of the search engine optimization class image to 200px */
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-/* Sets the max height of the online reputation management class image to 200px */
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-/* Sets the max height of the social media marketing class image to 200px */
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-/* Sets the font size of the search engine optimization class h2 to 36px */
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-/* Sets the font size of the online reputation management class h2 to 36px */
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-/* Sets the font size of the social media marketing class h2 to 36px */
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
 }
 
 /* Sets the font family and centers the content of the footer class */
