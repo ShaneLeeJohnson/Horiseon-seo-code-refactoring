@@ -10,6 +10,8 @@ N/A
 
 ## Usage
 
+To see the website in action you can follow this link: https://shaneleejohnson.github.io/Horiseon-seo-code-refactoring/
+
 This is a simple one page static website. To view the contents of the webpage you can either scroll down manually or click on one of the sections in the Navbar to be taken directly to that topic.
 
 The following screenshots show what the webpage should look like once loaded into the browser.
