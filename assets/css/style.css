@@ -119,20 +119,20 @@ p {
     color: #ffffff;
 }
 
-/* Centers the h3 heading */
-.benefit-lead h3 {
+/* Centers the h2 heading */
+.benefit-lead h2 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-/* Centers the h3 heading */
-.benefit-brand h3 {
+/* Centers the h2 heading */
+.benefit-brand h2 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-/* Centers the h3 heading */
-.benefit-cost h3 {
+/* Centers the h2 heading */
+.benefit-cost h2 {
     margin-bottom: 10px;
     text-align: center;
 }
